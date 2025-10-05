@@ -13,7 +13,8 @@ A Windows-based Discord bot that engages in natural conversations using the Open
 
 ## Prerequisites
 
-- Windows operating system  
+- Windows operating system
+- Ubuntu OS
 - Discord bot token  
 - OpenRouter API key(s)  
 - License key (if using license verification)  
@@ -23,7 +24,6 @@ A Windows-based Discord bot that engages in natural conversations using the Open
 1. **Download all files:**  
     - `discord_bot.exe` (main executable)  
     - `config.json` (configuration file)  
-    - `run.bat` or `start_bot.bat` (launch scripts)  
     - `api.txt` (API keys file)  
     - `questions.json` (conversation questions)  
 2. **Place all files in the same directory**
@@ -45,9 +45,9 @@ Edit `config.json` with your unique settings:
 
 ### 2. Setup `api.txt`
 
-Each line should have one OpenRouter API key:
+Each line should have one OpenRouter API key seperated by a comma:
 ```
-sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
 sk-or-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 ```
 
@@ -75,8 +75,12 @@ Add conversation starters in an array:
 | `token`             | Your Discord bot token from Discord Developer Portal           |
 | `slowmode_delay`    | Minimum seconds between messages (default: 5)                  |
 | `chat_interval`     | Regular chat interval in seconds (default: 10)                 |
-| `min/max_reply_delay`| Random reply delay (default: 10-25s)                         |
+| `min/max_reply_delay`| Random reply delay (default: 10-25s)                          |
 | `model_settings`    | AI model config (DeepSeek Chat v3.1)                           |
+
+You can see this video to know how to get token and channel id
+Token: https://youtu.be/rcwWex7aqTo?si=m8H3w35PK_10waHD
+channelID: https://youtu.be/tJVtH05IGsU?si=lRB7aWp2JLS8rOs1
 
 ### AI Model Settings
 
