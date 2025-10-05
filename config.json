@@ -1,6 +1,6 @@
 {
   "license_key": "YOUR_LICENSE_KEY_HERE",
-  "license_server_url": "hhttps://pratikhacker.pythonanywhere.com/api/verify",
+  
   "channelid": "YOUR_DISCORD_CHANNEL_ID",
   "token": "YOUR_DISCORD_BOT_TOKEN", 
   "slowmode_delay": 5,
